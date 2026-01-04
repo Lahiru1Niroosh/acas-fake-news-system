@@ -1,4 +1,4 @@
-# 🩺 Sri Lankan Health News Fact Verification System
+# 🩺 Sri Lankan Health News Fact Verification System  <br><br>
 
 
 📌 Project Overview
@@ -20,7 +20,7 @@ Traditional manual fact-checking is slow and inefficient. Therefore, there is a 
 - [Cite this Work](#cite-this-work)
 
 
-
+<br><br>
 ## Installation
 
 
