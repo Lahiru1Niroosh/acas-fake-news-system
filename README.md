@@ -44,8 +44,8 @@ Here's an overview of all APIs that are integrated
 
 
 
-# COMPONENT 1  - IT22576248
-## Text Credibility Assessment 
+# COMPONENT 1  - Text Credibility Assessment
+IT22576248 -K.K.K.G. Kalehewatta
 ### Component Overview
 
 This Component is an AI-based Text Credibility Assessment System designed to detect fake or misleading news content.
