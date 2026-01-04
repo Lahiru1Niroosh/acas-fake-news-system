@@ -1,12 +1,36 @@
 # 🩺 Sri Lankan Health News Fact Verification System
 
-**An AI-powered system to combat health misinformation in Sri Lanka through automated fact-checking, real-time source verification, and explainable credibility scoring.**
+**This is an implementation of a Dynamic, Evidence-based Fact-checking "Multimodal-Crew AI"-powered system to combat health misinformation in Sri Lanka through automated fact-checking, real-time source verification, and an explainable credibility scoring claim verification system**
+
+## Table of Contents
+- [Installation](#installation)
+- [Prepare Benchmarks](#prepare-benchmarks)
+- [Usage](#usage)
+- [Tools and Integrations](#tools-and-integrations)
+- [API](#api)
+- [Web Interface](#web-interface)
+- [License](#license)
+- [Cite this Work](#cite-this-work)
+
+
+
+## Installation
+
+
+
+### Integrated APIs
+Here's an overview of all APIs that are integrated
+
+
+
+
+
 
 ## ✨ Key Features
 
 ### 🤖 **Intelligent Multi-Model Analysis**
 
-
+### 🌐 **Comprehensive Source Integration**
 
 
 
