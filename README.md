@@ -1,4 +1,4 @@
-# 🩺 Sri Lankan Health News Fact Verification System  <br><br>
+# 🩺 Sri Lankan Health News Fact Verification System  <br><br><br><br>
 
 
 📌 Project Overview
@@ -43,7 +43,7 @@ Here's an overview of all APIs that are integrated
 
 
 
-
+<br><br><br><br>
 # COMPONENT 1  - Text Credibility Assessment
 IT22576248 -K.K.K.G. Kalehewatta
 ### Component Overview
@@ -114,10 +114,12 @@ Precision
 Recall
 F1-Score
 
+
+<br><br><br><br>
 # COMPONENT 2  - IT22
 
 
-
+<br><br><br><br>
 # COMPONENT 3  - IT22
 
 ## Multimodal Contextual Similarity Verification Module
@@ -270,5 +272,5 @@ This project is developed as a **Final Year Undergraduate IT Research Component*
 ### License
 This project is intended for academic and research purposes.
 
-
+<br><br><br><br>
 # COMPONENT 4  - IT22
