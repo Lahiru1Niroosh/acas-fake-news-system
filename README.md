@@ -1,6 +1,13 @@
 # 🩺 Sri Lankan Health News Fact Verification System
 
+
+📌 Project Overview
 **This is an implementation of a Dynamic, Evidence-based Fact-checking "Multimodal-Crew AI"-powered system to combat health misinformation in Sri Lanka through automated fact-checking, real-time source verification, and an explainable credibility scoring claim verification system**
+
+🎯 Research Problem
+
+The rapid spread of misinformation through online news platforms and social media poses serious risks to society.
+Traditional manual fact-checking is slow and inefficient. Therefore, there is a need for an automated, scalable, and reliable system that can assess the credibility of news articles using AI techniques.
 
 ## Table of Contents
 - [Installation](#installation)
@@ -39,11 +46,73 @@ Here's an overview of all APIs that are integrated
 
 # COMPONENT 1  - IT22576248
 ## Text Credibility Assessment 
-### 📌 Project Overview
+### Component Overview
 
-This project implements an AI-based Text Credibility Assessment System designed to detect fake or misleading news content.
+This Component is an AI-based Text Credibility Assessment System designed to detect fake or misleading news content.
 The system combines Natural Language Processing (NLP), Machine Learning, Semantic Similarity, and News API–based verification to evaluate the trustworthiness of textual information.
+### Research Gap
 
+### 🧠 System Features
+Text preprocessing and normalization
+Sentence embeddings using SBERT
+Machine learning classification 
+Trust score calculation using cosine similarity
+External verification using News APIs
+Visualization of label and trust score distributions
+Prediction support for new/unseen text
+
+
+### 🏗️ System Architecture (High Level)
+Data Collection
+Text Preprocessing
+Embedding Generation
+ML Model Training
+News API Verification
+Trust Score Calculation
+Result Visualization & Output
+
+### ⚙️ System & Software Requirements
+Hardware Requirements
+CPU (Intel i5 or higher recommended)
+Minimum 8GB RAM
+GPU (Optional, for faster embedding generation)
+
+#### Software Requirements
+Python 3.9+
+Google Colab or Local Python Environment
+Internet connection (for APIs)
+
+### 🧪 Technologies, Techniques & Algorithms
+Programming Language
+Python
+Libraries & Frameworks
+Pandas, NumPy
+Scikit-learn
+SentenceTransformers (SBERT)
+Hugging Face Transformers
+XGBoost
+Matplotlib, Seaborn
+
+### 🌐 External APIs Used (Verification)
+News Verification APIs
+NewsAPI.org
+GNews API
+WorldNewsAPI
+
+### 🔍 Methodology
+Load and preprocess the dataset
+Clean and normalize text
+Generate sentence embeddings
+Train ML classification model
+Verify claims using News APIs
+Compute trust score
+Visualize results and save outputs
+
+### 📊 Evaluation Metrics
+Accuracy
+Precision
+Recall
+F1-Score
 
 # COMPONENT 2  - IT22
 
