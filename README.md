@@ -1,29 +1,44 @@
-COMPONENT 1  - IT22576248
+# 🩺 Sri Lankan Health News Fact Verification System
+
+**An AI-powered system to combat health misinformation in Sri Lanka through automated fact-checking, real-time source verification, and explainable credibility scoring.**
+
+## ✨ Key Features
+
+### 🤖 **Intelligent Multi-Model Analysis**
 
 
 
 
-COMPONENT 2  - IT22
 
 
 
-COMPONENT 3  - IT22
 
-# Multimodal Contextual Similarity Verification Module
+# COMPONENT 1  - IT22576248
 
-## Component Description
+
+
+
+# COMPONENT 2  - IT22
+
+
+
+# COMPONENT 3  - IT22
+
+## Multimodal Contextual Similarity Verification Module
+
+### Component Description
 A multimodal module to verify contextual similarity between text and images using external tools and explainable AI principles.
 
 ---
 
-## Project Overview
+### Project Overview
 With the rapid spread of misinformation across digital platforms, verifying the contextual alignment between images and textual claims has become a critical challenge. This project proposes and implements a **Multimodal Contextual Similarity Verification Module** that evaluates whether an image and a given text are semantically and contextually aligned.
 
 The system leverages a **pretrained CLIP (Contrastive Language–Image Pretraining)** model, integrates **OCR-based text extraction** for images containing embedded text, and applies **cosine similarity scoring** to detect contextual matches or mismatches. The solution is designed to be **scalable, explainable**, and suitable for **misinformation detection and fact-checking scenarios**.
 
 ---
 
-## Objectives
+### Objectives
 - Verify contextual similarity between image and text inputs  
 - Detect semantic mismatches indicative of misinformation  
 - Integrate OCR for images containing embedded textual information  
@@ -32,7 +47,7 @@ The system leverages a **pretrained CLIP (Contrastive Language–Image Pretraini
 
 ---
 
-## System Architecture
+### System Architecture
 The system follows a multimodal pipeline combining image processing, text understanding, and explainable decision logic.
 
 **High-level flow:**
@@ -64,26 +79,26 @@ The system follows a multimodal pipeline combining image processing, text unders
 
 ---
 
-## Explainable AI (XAI) Perspective
+### Explainable AI (XAI) Perspective
 Unlike traditional classification-based models, this system is explicitly designed using **Explainable AI (XAI)** principles.
 
-### 1. Similarity Score Exposure
+#### 1. Similarity Score Exposure
 Each image–text pair produces a **numeric cosine similarity score** representing semantic alignment between visual and textual content.
 
-### 2. Threshold-Based Decision Logic
+#### 2. Threshold-Based Decision Logic
 Decisions are made using a **transparent threshold mechanism**:
 - Similarity ≥ Threshold → **MATCH**
 - Similarity < Threshold → **MISMATCH**
 
 The threshold value is **empirically adjusted** based on experimental observations.
 
-### 3. OCR Evidence Integration
+#### 3. OCR Evidence Integration
 For images containing embedded text, OCR-extracted content is:
 - Explicitly displayed
 - Included in similarity computation  
 This allows users to understand **why** a decision was made.
 
-### 4. Interpretability Over Prediction
+#### 4. Interpretability Over Prediction
 Instead of producing opaque predictions, the system outputs:
 - Similarity score
 - OCR-extracted text (if present)
@@ -93,32 +108,32 @@ This design makes the system suitable for **fact-checking, misinformation analys
 
 ---
 
-## Technologies & Tools Used
+### Technologies & Tools Used
 
-### AI & ML Models
+###$ AI & ML Models
 - **CLIP (ViT-B/32)** – Pretrained multimodal image–text model
 - **EasyOCR** – Optical Character Recognition for embedded image text
 
-### Programming & Libraries
+#### Programming & Libraries
 - Python 3  
 - PyTorch  
 - NumPy  
 - Pandas  
 - Pillow (PIL)  
 
-### Platforms
+#### Platforms
 - Google Colab (GPU-enabled)  
 - GitHub (Version Control)  
 
 ---
 
-## Datasets
+### Datasets
 - **Custom Test Images**
   - Used to demonstrate real-world scenarios and explainability.
 
 ---
 
-## Decision Logic
+### Decision Logic
 A cosine similarity threshold is applied to determine contextual alignment:
 - Similarity ≥ Threshold → **MATCH**
 - Similarity < Threshold → **MISMATCH**
@@ -127,7 +142,7 @@ The threshold is adjustable and tuned based on experimental results to balance s
 
 ---
 
-## External Verification (Conceptual Extension)
+### External Verification (Conceptual Extension)
 The architecture supports future integration with external verification tools such as:
 - Web search APIs
 - Fact-checking platforms (e.g., FactCrescendo)
@@ -136,7 +151,7 @@ These extensions can further validate detected mismatches against trusted extern
 
 ---
 
-## Version Control & Collaboration
+### Version Control & Collaboration
 This project uses **GitHub** for:
 - Version control
 - Commit history tracking
@@ -147,7 +162,7 @@ All project progress, updates, and experimental changes are maintained with full
 
 ---
 
-## Academic Context
+### Academic Context
 This project is developed as a **Final Year Undergraduate IT Research Component**, emphasizing:
 - Multimodal AI
 - Explainable AI (XAI)
@@ -156,8 +171,8 @@ This project is developed as a **Final Year Undergraduate IT Research Component*
 
 ---
 
-## License
+### License
 This project is intended for academic and research purposes.
 
 
-COMPONENT 4  - IT22
+# COMPONENT 4  - IT22
