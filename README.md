@@ -38,8 +38,11 @@ Here's an overview of all APIs that are integrated
 
 
 # COMPONENT 1  - IT22576248
+## Text Credibility Assessment 
+### 📌 Project Overview
 
-
+This project implements an AI-based Text Credibility Assessment System designed to detect fake or misleading news content.
+The system combines Natural Language Processing (NLP), Machine Learning, Semantic Similarity, and News API–based verification to evaluate the trustworthiness of textual information.
 
 
 # COMPONENT 2  - IT22
