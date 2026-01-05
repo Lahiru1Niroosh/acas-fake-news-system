@@ -14,9 +14,8 @@
 - [Evaluation & Charts](#-evaluation--charts)
 - [Technologies Used](#-technologies-used)
 - [License](#-license)
-- [Author](#-author)
 - [Future Improvements](#-future-improvements)
-
+---
 
 ### 📌 Project Overview
 
@@ -27,7 +26,10 @@
 The rapid spread of misinformation through online news platforms and social media poses serious risks to society.
 Traditional manual fact-checking is slow and inefficient. Therefore, there is a need for an automated, scalable, and reliable system that can assess the credibility of news articles using AI techniques.<br><br>
 
+## ✨ Key Features
 
+
+---
 
 
 <br><br>
@@ -43,19 +45,29 @@ pip install -r requirements.txt
 ```
 
 
+
+### How It Works
+
+
+
+
+
+
+
+---
 ### Dataset
 > **Dataset Source:**  
 > This project uses and modifies the [*Name*](link) by **author** (Kaggle).  
 > Data was cleaned, header-fixed, and news articles for balanced training and clear visualization.  
 > Used purely for **educational and research** purposes.
-
+---
 ## Training the Model
 Run the following command from the project root:
-
+---
 ## Evaluation & Charts
 After training, the model achieves **perfect classification accuracy** on this dataset.
 
-
+---
 ### Integrated APIs
 Here's an overview of all APIs that are integrated
 
@@ -63,20 +75,21 @@ Here's an overview of all APIs that are integrated
 
 
 
+---
 
-## ✨ Key Features
 
-### 🤖 **Intelligent Multi-Model Analysis**
-
-### 🌐 **Comprehensive Source Integration**
 
 
 
 
 
 <br><br><br><br>
+
+
+
 # COMPONENT 1  - Text Credibility Assessment
 IT22576248 -K.K.K.G. Kalehewatta
+
 ### Component Overview
 
 This Component is an AI-based Text Credibility Assessment System (Text Credibility & Fact-Checking System) designed to detect fake or misleading news content.
@@ -114,9 +127,7 @@ Hardware Requirements
 CPU (Intel i5 or higher recommended)
 Minimum 8GB RAM
 GPU (Optional, for faster embedding generation)
-
-#### Software Requirements
-Python 3.9+
+Python 3.11
 Google Colab or Local Python Environment
 Internet connection (for APIs)
 
@@ -128,7 +139,6 @@ Pandas, NumPy
 Scikit-learn
 SentenceTransformers (SBERT)
 Hugging Face Transformers
-XGBoost
 Matplotlib, Seaborn
 
 ### 🌐 External APIs Used (Verification)
@@ -154,10 +164,12 @@ F1-Score
 
 
 <br><br><br><br>
+---
 # COMPONENT 2  - IT22
 
 
 <br><br><br><br>
+---
 # COMPONENT 3  - IT22
 
 ## Multimodal Contextual Similarity Verification Module
@@ -165,14 +177,12 @@ F1-Score
 ### Component Description
 A multimodal module to verify contextual similarity between text and images using external tools and explainable AI principles.
 
----
 
 ### Project Overview
 With the rapid spread of misinformation across digital platforms, verifying the contextual alignment between images and textual claims has become a critical challenge. This project proposes and implements a **Multimodal Contextual Similarity Verification Module** that evaluates whether an image and a given text are semantically and contextually aligned.
 
 The system leverages a **pretrained CLIP (Contrastive Language–Image Pretraining)** model, integrates **OCR-based text extraction** for images containing embedded text, and applies **cosine similarity scoring** to detect contextual matches or mismatches. The solution is designed to be **scalable, explainable**, and suitable for **misinformation detection and fact-checking scenarios**.
 
----
 
 ### Objectives
 - Verify contextual similarity between image and text inputs  
@@ -181,7 +191,6 @@ The system leverages a **pretrained CLIP (Contrastive Language–Image Pretraini
 - Support extension to external fact-checking tools (e.g., FactCrescendo)  
 - Provide **explainable similarity decisions** rather than black-box predictions  
 
----
 
 ### System Architecture
 The system follows a multimodal pipeline combining image processing, text understanding, and explainable decision logic.
@@ -213,7 +222,7 @@ The system follows a multimodal pipeline combining image processing, text unders
 
 
 
----
+
 
 ### Explainable AI (XAI) Perspective
 Unlike traditional classification-based models, this system is explicitly designed using **Explainable AI (XAI)** principles.
@@ -242,7 +251,6 @@ Instead of producing opaque predictions, the system outputs:
 
 This design makes the system suitable for **fact-checking, misinformation analysis, and research explainability requirements**.
 
----
 
 ### Technologies & Tools Used
 
@@ -261,13 +269,11 @@ This design makes the system suitable for **fact-checking, misinformation analys
 - Google Colab (GPU-enabled)  
 - GitHub (Version Control)  
 
----
 
 ### Datasets
 - **Custom Test Images**
   - Used to demonstrate real-world scenarios and explainability.
 
----
 
 ### Decision Logic
 A cosine similarity threshold is applied to determine contextual alignment:
@@ -276,37 +282,11 @@ A cosine similarity threshold is applied to determine contextual alignment:
 
 The threshold is adjustable and tuned based on experimental results to balance sensitivity and robustness.
 
----
 
-### External Verification (Conceptual Extension)
-The architecture supports future integration with external verification tools such as:
-- Web search APIs
-- Fact-checking platforms (e.g., FactCrescendo)
-
-These extensions can further validate detected mismatches against trusted external sources.
-
----
-
-### Version Control & Collaboration
-This project uses **GitHub** for:
-- Version control
-- Commit history tracking
-- Branching and merging
-- Collaborative development  
-
-All project progress, updates, and experimental changes are maintained with full history for evaluation and transparency.
-
----
-
-### Academic Context
-This project is developed as a **Final Year Undergraduate IT Research Component**, emphasizing:
-- Multimodal AI
-- Explainable AI (XAI)
-- Misinformation detection
-- Practical applicability and research transparency
 
 
 <br><br><br><br>
+---
 # COMPONENT 4  - IT22
 
 
@@ -331,7 +311,8 @@ This project is developed as a **Final Year Undergraduate IT Research Component*
 
 
 
-
+<br><br><br><br>
+---
 ## Technologies Used
 
 - **Python 3.11**
@@ -345,7 +326,7 @@ This project is developed as a **Final Year Undergraduate IT Research Component*
 - **Deployment & DevOps** →  FastAPI, Docker
 - **Version Control** →  Git & GitHub
 
-
+---
 <br><br>
 ## Future Improvements
 
@@ -355,7 +336,8 @@ This project is developed as a **Final Year Undergraduate IT Research Component*
 -Browser extensions-Enable users to check credibility instantly.
 -Ethical & Bias Mitigation Enhancements- fairness across regions and languages.
 -Deploy live on **Hugging Face Spaces**.
-
+---
 <br><br>
 ## License
 This project is intended for academic and research purposes.
+---
