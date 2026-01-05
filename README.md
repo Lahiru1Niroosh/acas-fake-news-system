@@ -18,9 +18,9 @@
 - [Future Improvements](#-future-improvements)
 
 
-📌 Project Overview
+### 📌 Project Overview
 
-**This is an implementation of a Dynamic, Evidence-based Fact-checking "Multimodal-Crew AI"-powered system to combat health misinformation in Sri Lanka through automated fact-checking, real-time source verification, and an explainable credibility scoring claim verification system**
+**This is an implementation of a Dynamic, Evidence-based Fact-checking "Multimodal-Crew AI"-powered system to combat health misinformation in Sri Lanka through automated fact-checking, real-time source verification, and an explainable credibility scoring claim verification system**<br><br>
 
 🎯 Research Problem
 
@@ -32,7 +32,28 @@ Traditional manual fact-checking is slow and inefficient. Therefore, there is a 
 
 <br><br>
 ## Installation
+#### Clone the Repository
+```bash
+git clone https://github.com/Lahiru1Niroosh/acas-fake-news-system.git
+cd fake-news-detector
+```
+#### Install Dependencies
+```bash
+pip install -r requirements.txt
+```
 
+
+### Dataset
+> **Dataset Source:**  
+> This project uses and modifies the [*Name*](link) by **author** (Kaggle).  
+> Data was cleaned, header-fixed, and news articles for balanced training and clear visualization.  
+> Used purely for **educational and research** purposes.
+
+## Training the Model
+Run the following command from the project root:
+
+## Evaluation & Charts
+After training, the model achieves **perfect classification accuracy** on this dataset.
 
 
 ### Integrated APIs
@@ -291,3 +312,50 @@ This project is intended for academic and research purposes.
 
 <br><br><br><br>
 # COMPONENT 4  - IT22
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Technologies Used
+
+- **Python 3.11**
+- **Development & Execution Environment** → Google Colab, Jupyter Notebook
+- **Machine Learning & NLP** → PyTorch, Sentence-Transformers
+- **Data Processing** →   Pandas, NumPy
+- **scikit-learn** → TF-IDF Vectorizer, Logistic Regression  
+- **matplotlib** → Model visualization
+- **Web & Data Collection** →   Requests, BeautifulSoup
+- **Databases** → MongoDB Atlas
+- **Deployment & DevOps** →  FastAPI, Docker
+- **Version Control** →  Git & GitHub
+
+
+
+## Future Improvements
+
+-Extend the system to analyze videos along side images, and text together.
+-Extend the system across all social media platform posts not just twitter.
+-Multilingual Support -Sinhala 🇱🇰, Tamil 🇱🇰, English  🌍Use multilingual transformers (mBERT, XLM-R).
+-Browser extensions-Enable users to check credibility instantly.
+-Ethical & Bias Mitigation Enhancements- fairness across regions and languages.
+-Deploy live on **Hugging Face Spaces**.
