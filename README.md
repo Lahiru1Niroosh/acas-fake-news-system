@@ -1,23 +1,33 @@
-# 🩺 Sri Lankan Health News Fact Verification System  <br><br><br><br>
+# 🩺 Sri Lankan Health/ Political News Fact Verification System  <br><br><br><br>
+
+## Table of Contents
+- [Overview](#-overview)
+- [Project Structure](#-project-structure)
+- [Installation](#-installation)
+- [How It Works](#-how-it-works)
+- [Dataset](#-dataset)
+- [Training the Model](#-training-the-model)
+- [Tools and Integrations](#tools-and-integrations)
+- [API](#api)
+- [Web Interface](#web-interface)
+- [Components](#COMPONENET)
+- [Evaluation & Charts](#-evaluation--charts)
+- [Technologies Used](#-technologies-used)
+- [License](#-license)
+- [Author](#-author)
+- [Future Improvements](#-future-improvements)
 
 
 📌 Project Overview
+
 **This is an implementation of a Dynamic, Evidence-based Fact-checking "Multimodal-Crew AI"-powered system to combat health misinformation in Sri Lanka through automated fact-checking, real-time source verification, and an explainable credibility scoring claim verification system**
 
 🎯 Research Problem
 
 The rapid spread of misinformation through online news platforms and social media poses serious risks to society.
-Traditional manual fact-checking is slow and inefficient. Therefore, there is a need for an automated, scalable, and reliable system that can assess the credibility of news articles using AI techniques.
+Traditional manual fact-checking is slow and inefficient. Therefore, there is a need for an automated, scalable, and reliable system that can assess the credibility of news articles using AI techniques.<br><br>
 
-## Table of Contents
-- [Installation](#installation)
-- [Prepare Benchmarks](#prepare-benchmarks)
-- [Usage](#usage)
-- [Tools and Integrations](#tools-and-integrations)
-- [API](#api)
-- [Web Interface](#web-interface)
-- [License](#license)
-- [Cite this Work](#cite-this-work)
+
 
 
 <br><br>
@@ -48,8 +58,15 @@ Here's an overview of all APIs that are integrated
 IT22576248 -K.K.K.G. Kalehewatta
 ### Component Overview
 
-This Component is an AI-based Text Credibility Assessment System designed to detect fake or misleading news content.
+This Component is an AI-based Text Credibility Assessment System (Text Credibility & Fact-Checking System) designed to detect fake or misleading news content.
 The system combines Natural Language Processing (NLP), Machine Learning, Semantic Similarity, and News API–based verification to evaluate the trustworthiness of textual information.
+
+👉This model reads news text
+👉 Analyzes language, meaning, and writing style
+👉 Checks credibility using ML + Deep Learning
+👉 Verifies claims using external sources (WHO, News APIs)
+👉 Produces a final credibility verdict with confidence
+
 ### Research Gap
 
 ### 🧠 System Features
