@@ -1,7 +1,7 @@
 # 🩺 Sri Lankan Health/ Political News Fact Verification System  <br><br><br><br>
 
 ## Table of Contents
-- [Overview](#-overview)
+- [Overview](#Projectoverview)
 - [Project Structure](#-project-structure)
 - [Installation](#-installation)
 - [How It Works](#-how-it-works)
