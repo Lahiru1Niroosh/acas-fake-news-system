@@ -316,26 +316,26 @@ The threshold is adjustable and tuned based on experimental results to balance s
 ## Technologies Used
 
 - **Python 3.11**
-- **Development & Execution Environment** → Google Colab, Jupyter Notebook
-- **Machine Learning & NLP** → PyTorch, Sentence-Transformers
-- **Data Processing** →   Pandas, NumPy
-- **scikit-learn** → TF-IDF Vectorizer, Logistic Regression  
-- **matplotlib** → Model visualization
-- **Web & Data Collection** →   Requests, BeautifulSoup
-- **Databases** → MongoDB Atlas
-- **Deployment & DevOps** →  FastAPI, Docker
-- **Version Control** →  Git & GitHub
+- **Development & Execution Environment** → Google Colab, Jupyter Notebook <br>
+- **Machine Learning & NLP** → PyTorch, Sentence-Transformers <br>
+- **Data Processing** →   Pandas, NumPy <br>
+- **scikit-learn** → TF-IDF Vectorizer, Logistic Regression   <br>
+- **matplotlib** → Model visualization <br>
+- **Web & Data Collection** →   Requests, BeautifulSoup <br>
+- **Databases** → MongoDB Atlas <br>
+- **Deployment & DevOps** →  FastAPI, Docker <br>
+- **Version Control** →  Git & GitHub <br>
 
 ---
 <br><br>
 ## Future Improvements
 
--Extend the system to analyze videos along side images, and text together.
--Extend the system across all social media platform posts not just twitter.
--Multilingual Support -Sinhala 🇱🇰, Tamil 🇱🇰, English  🌍Use multilingual transformers (mBERT, XLM-R).
--Browser extensions-Enable users to check credibility instantly.
--Ethical & Bias Mitigation Enhancements- fairness across regions and languages.
--Deploy live on **Hugging Face Spaces**.
+-Extend the system to analyze videos along side images, and text together.<br>
+-Extend the system across all social media platform posts not just twitter.<br>
+-Multilingual Support -Sinhala 🇱🇰, Tamil 🇱🇰, English  🌍Use multilingual transformers (mBERT, XLM-R).<br>
+-Browser extensions-Enable users to check credibility instantly.<br>
+-Ethical & Bias Mitigation Enhancements- fairness across regions and languages.<br>
+-Deploy live on **Hugging Face Spaces**.<br>
 ---
 <br><br>
 ## License
