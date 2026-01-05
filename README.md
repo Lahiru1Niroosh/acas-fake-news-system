@@ -305,17 +305,13 @@ This project is developed as a **Final Year Undergraduate IT Research Component*
 - Misinformation detection
 - Practical applicability and research transparency
 
----
-
-### License
-This project is intended for academic and research purposes.
 
 <br><br><br><br>
 # COMPONENT 4  - IT22
 
 
-
-
+<br><br>
+<br><br>
 
 
 
@@ -350,7 +346,7 @@ This project is intended for academic and research purposes.
 - **Version Control** →  Git & GitHub
 
 
-
+<br><br>
 ## Future Improvements
 
 -Extend the system to analyze videos along side images, and text together.
@@ -359,3 +355,7 @@ This project is intended for academic and research purposes.
 -Browser extensions-Enable users to check credibility instantly.
 -Ethical & Bias Mitigation Enhancements- fairness across regions and languages.
 -Deploy live on **Hugging Face Spaces**.
+
+<br><br>
+## License
+This project is intended for academic and research purposes.
