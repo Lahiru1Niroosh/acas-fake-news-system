@@ -1,0 +1,84 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# =========================
+# Virtual Environment
+# =========================
+.venv/
+venv/
+ENV/
+env/
+
+# =========================
+# Environment variables
+# =========================
+.env
+
+# =========================
+# Streamlit
+# =========================
+.streamlit/secrets.toml
+
+# =========================
+# Model & ML artifacts
+# (keep structure, ignore heavy files)
+# =========================
+Model/*.h5
+Model/*.pt
+Model/*.pth
+Model/*.onnx
+Model/*.pkl
+Model/*.joblib
+Model/checkpoints/
+Model/logs/
+
+# =========================
+# Images & outputs
+# =========================
+images/generated/
+images/output/
+images/tmp/
+
+# =========================
+# Frontend (if React / Node based)
+# =========================
+Frontend-ACAS/node_modules/
+Frontend-ACAS/build/
+Frontend-ACAS/dist/
+Frontend-ACAS/.cache/
+
+# =========================
+# Logs
+# =========================
+*.log
+logs/
+
+# =========================
+# OS / Editor files
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Temporary files
+# =========================
+*.tmp
+*.swp
+*.bak
