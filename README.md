@@ -165,8 +165,7 @@ F1-Score
 
 <br><br><br><br>
 ---
-# COMPONENT 2  - IT22
-🖼️# COMPONENT 2 – Image Authenticity Detection
+# 🖼️ COMPONENT 2  - Image Authenticity Detection 
 
 IT22594990 – Ranasinghe K.D
 
@@ -265,7 +264,7 @@ The decision-making process follows this logic:
 CNN extracts visual features such as textures, patterns, and artifacts
 The model compares extracted features with learned distributions from training data
 
-####The output layer predicts:
+#### The output layer predicts:
 
 AI-generated or Human-made
 A confidence score reflects prediction certainty
