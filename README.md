@@ -166,6 +166,110 @@ F1-Score
 <br><br><br><br>
 ---
 # COMPONENT 2  - IT22
+🖼️# COMPONENT 2 – Image Authenticity Detection
+
+IT22594990 – Ranasinghe K.D
+
+### 1. Component Overview
+
+This component focuses on Image Authenticity Detection, aiming to determine whether an image shared on social media platforms is AI-generated or human-made (real). With the rapid growth of AI-generated visual content, visual misinformation has become increasingly difficult to detect through manual inspection.
+
+The Image Authenticity Detection module leverages deep learning–based computer vision techniques to analyze visual artifacts, textures, and structural patterns that differentiate synthetic images from real photographs. This component operates as an ImageAgent within the CrewAI multi-agent framework and provides reliable image credibility outputs to the AggregatorAgent for multimodal credibility assessment.
+
+Input: Image from social media
+Output: AI-generated or Human-made label with a confidence score
+
+### 2. System Features
+
+Detection of AI-generated vs Human-made images
+Automated image preprocessing (resizing, normalization)
+Feature extraction using deep learning models
+Supervised learning with labeled datasets
+Confidence score generation (range: 0–1)
+Integration with CrewAI multi-agent architecture
+Storage of predictions and metadata in PostgreSQL
+Scalable and real-time–ready system design
+
+### 3. System Architecture (High-Level)
+Image Ingestion (Dataset / Twitter Images)
+Image Preprocessing
+Feature Extraction using CNN
+Image Classification (AI-generated vs Human-made)
+Confidence Score Generation
+Result Storage (PostgreSQL)
+Output forwarded to the AggregatorAgent
+
+### 4. System & Software Requirements
+Software Requirements
+
+- Python 3.10 / 3.11
+- Google Colab or Local Python Environment
+- Internet connection for dataset access
+
+### 5. Technologies, Techniques & Algorithms
+Programming Language
+- Python
+- Libraries & Frameworks
+- PyTorch / TensorFlow
+- OpenCV
+- NumPy
+- Matplotlib
+- Scikit-learn
+- Deep Learning Models
+- Convolutional Neural Networks (CNN)
+- Transfer Learning (optional – ResNet / EfficientNet)
+
+### 6. External APIs Used
+
+Kaggle API – for dataset downloading
+(Twitter API planned for future fine-tuning and evaluation)
+
+### 7. Methodology
+
+Download labeled image datasets from Kaggle
+Preprocess images (resizing, normalization, augmentation)
+Split the dataset into training and testing sets
+Train a CNN-based image classification model
+Validate the model using unseen test images
+Generate prediction labels and confidence scores
+Store results for analysis and reporting
+
+### 8. Evaluation Metrics
+
+Model performance is evaluated using the following metrics:
+Accuracy
+Precision
+Recall
+F1-Score
+
+These metrics ensure reliable classification between AI-generated and human-made images.
+
+### 9. Dataset
+Dataset Used
+
+Real vs Fake AI Image Dataset
+🔗 https://www.kaggle.com/datasets/virajinduruwa/real-vs-fakeai-image-dataset
+
+#### Dataset Description
+
+Two classes:
+real → Human-made images
+fake → AI-generated images
+
+Fully labeled dataset suitable for supervised learning
+
+### 10. Decision Logic
+
+The decision-making process follows this logic:
+
+CNN extracts visual features such as textures, patterns, and artifacts
+The model compares extracted features with learned distributions from training data
+
+####The output layer predicts:
+
+AI-generated or Human-made
+A confidence score reflects prediction certainty
+Final results are forwarded to the AggregatorAgent for multimodal credibility fusion
 
 
 <br><br><br><br>
