@@ -1,4 +1,4 @@
-# 🩺 Sri Lankan Health/ Political News Fact Verification System  <br><br><br><br>
+# 🩺  Health/ Political News Fact Verification System  <br><br><br><br>
 
 ## Table of Contents
 - [Project Overview](#Projectoverview)
