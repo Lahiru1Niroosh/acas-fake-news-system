@@ -208,14 +208,7 @@ Here's an overview of all APIs that are integrated
 ---
 
 
-
-
-
-
-
 <br><br><br><br>
-
-
 
 # COMPONENT 1  - Text Credibility Assessment
 IT22576248 -K.K.K.G. Kalehewatta
@@ -241,7 +234,6 @@ Trust score calculation using cosine similarity
 External verification using News APIs
 Visualization of label and trust score distributions
 Prediction support for new/unseen text
-
 
 ### 🏗️ System Architecture (High Level)
 Data Collection
@@ -320,6 +312,7 @@ Storage of predictions and metadata in PostgreSQL
 Scalable and real-time–ready system design
 
 ### 3. System Architecture (High-Level)
+
 Image Ingestion (Dataset / Twitter Images)
 Image Preprocessing
 Feature Extraction using CNN
@@ -329,8 +322,8 @@ Result Storage (PostgreSQL)
 Output forwarded to the AggregatorAgent
 
 ### 4. System & Software Requirements
-Software Requirements
 
+Software Requirements
 - Python 3.10 / 3.11
 - Google Colab or Local Python Environment
 - Internet connection for dataset access
@@ -403,7 +396,7 @@ Final results are forwarded to the AggregatorAgent for multimodal credibility fu
 
 <br><br><br><br>
 ---
-# COMPONENT 3  - IT22
+# COMPONENT 3  - IT22067074
 
 ## Multimodal Contextual Similarity Verification Module
 
@@ -415,7 +408,6 @@ A multimodal module to verify contextual similarity between text and images usin
 With the rapid spread of misinformation across digital platforms, verifying the contextual alignment between images and textual claims has become a critical challenge. This project proposes and implements a **Multimodal Contextual Similarity Verification Module** that evaluates whether an image and a given text are semantically and contextually aligned.
 
 The system leverages a **pretrained CLIP (Contrastive Language–Image Pretraining)** model, integrates **OCR-based text extraction** for images containing embedded text, and applies **cosine similarity scoring** to detect contextual matches or mismatches. The solution is designed to be **scalable, explainable**, and suitable for **misinformation detection and fact-checking scenarios**.
-
 
 ### Objectives
 - Verify contextual similarity between image and text inputs  
@@ -520,29 +512,6 @@ The threshold is adjustable and tuned based on experimental results to balance s
 
 <br><br><br><br>
 ---
-# COMPONENT 4  - IT22
-
-
-<br><br>
-<br><br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <br><br><br><br>
 ---
