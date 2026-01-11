@@ -1,58 +1,188 @@
-# 🩺  Health/ Political News Fact Verification System  <br><br><br><br>
+# ACAS – Fake News Detection & Privacy-Aware Verification System
 
-## Table of Contents
-- [Project Overview](#Projectoverview)
-- [Project Structure](#-project-structure)
-- [Installation](#-installation)
-- [How It Works](#-how-it-works)
-- [Dataset](#-dataset)
-- [Training the Model](#-training-the-model)
-- [Tools and Integrations](#tools-and-integrations)
-- [API](#api)
-- [Web Interface](#web-interface)
-- [Components](#COMPONENET)
-- [Evaluation & Charts](#-evaluation--charts)
-- [Technologies Used](#-technologies-used)
-- [License](#-license)
-- [Future Improvements](#-future-improvements)
----
+## 📌 Project Overview
+ACAS (Automated Credibility Assessment System) is a privacy-first, multi-agent fake news detection platform designed to verify health-related and news-related social media content.  
+The system uses a **CrewAI-based agent orchestration framework** combined with **FastAPI** and **React** to analyze tweets containing text, images, or both, while ensuring **user metadata privacy through PII masking**.
 
-### 📌 Project Overview
-
-**This is an implementation of a Dynamic, Evidence-based Fact-checking "Multimodal-Crew AI"-powered system to combat health misinformation in Sri Lanka through automated fact-checking, real-time source verification, and an explainable credibility scoring claim verification system**<br><br>
-
-🎯 Research Problem
-
-The rapid spread of misinformation through online news platforms and social media poses serious risks to society.
-Traditional manual fact-checking is slow and inefficient. Therefore, there is a need for an automated, scalable, and reliable system that can assess the credibility of news articles using AI techniques.<br><br>
-
-## ✨ Key Features
-
+The platform demonstrates a **plug-and-play architecture**, allowing independently trained AI models to be integrated seamlessly into the verification pipeline.
 
 ---
 
+## 🎯 Problem Addressed
+The rapid spread of fake news—especially in health, political, and public safety domains—causes misinformation, panic, and loss of trust.
 
-<br><br>
-## Installation
-#### Clone the Repository
-```bash
-git clone https://github.com/Lahiru1Niroosh/acas-fake-news-system.git
-cd fake-news-detector
-```
-#### Install Dependencies
-```bash
-pip install -r requirements.txt
-```
+Existing solutions often lack:
+- Privacy protection
+- Explainable decisions
+- Modular AI integration
+
+ACAS addresses these gaps through **privacy-aware processing, explainable AI (XAI), and modular agent orchestration**.
+
+---
+
+## 🧠 System Architecture (High-Level)
+
+Frontend (React + Tailwind)
+↓  
+FastAPI `/verify` API  
+↓  
+CrewAI Pipeline Controller  
+↓  
+Privacy Agent (PII Masking) → MongoDB (Raw + Masked Metadata)  
+↓  
+Routing Logic  
+- Text → Text Agent  
+- Image → Image Agent  
+- Text + Image → Both Agents  
+↓  
+Similarity Agent (Final Gate + XAI)  
+↓  
+MongoDB (Agent Scores + Final Verdict)  
+↓  
+Frontend Modal (Result + Explanation)
+
+---
+
+## 🧩 Individual Component Contribution
+**Author:** Sathsara W.H.A.L.N - IT22568632
+
+### 🔹 Component Title
+**Plug-and-Play Agent-Orchestration Framework (ACIF) + Privacy Agent**
+
+### 🔹 Description
+This component ensures that user privacy is preserved before any AI-based analysis and orchestrates multiple AI agents using CrewAI in a strict linear pipeline.
+
+### 🔹 Key Responsibilities
+- Designed and implemented the **Privacy Agent** for PII masking
+- Enforced **mandatory execution order** using CrewAI
+- Built routing logic for text, image, and multimodal tweets
+- Enabled **plug-and-play integration** for externally trained ML models
+
+---
+
+## 🧑‍🤝‍🧑 CrewAI Agents & Roles
+
+| Agent Name | Role | Responsibility |
+|-----------|------|----------------|
+| Privacy_Agent | PII Masking Officer | Masks all user metadata before processing |
+| Text_Agent | Linguistic Analyst | Analyzes textual credibility |
+| Image_Agent | Visual Forensic Expert | Analyzes image credibility |
+| Similarity_Agent | Final Decision Gatekeeper & XAI Specialist | Produces final verdict and explanation |
+
+---
+
+## 🔁 Pipeline Execution Flow (Mandatory)
+
+1. Frontend sends raw tweet + user metadata
+2. **Privacy Agent runs first (non-skippable)**
+3. Routing logic selects relevant agents:
+   - Text only → Text Agent
+   - Image only → Image Agent
+   - Text + Image → Both agents
+4. Outputs passed to Similarity Agent
+5. Final credibility score + XAI reason generated
+6. All results logged in MongoDB
+7. Response returned to frontend
+
+---
+
+## 🗄️ MongoDB Data Storage
+
+Each verification stores:
+- Original tweet data
+- Raw user metadata (audit purpose)
+- Masked user metadata
+- Individual agent scores
+- Final credibility score
+- Explainable AI (XAI) reason
+
+---
+
+## 🔌 Plug-and-Play Model Integration
+
+External teams can integrate their trained models by adding them to:
+
+backend/models/
+- text_model.pkl
+- image_model.pkl
+
+Integration points are clearly marked in code:
 
 
 
-### How It Works
+## 🖥️ Frontend Features
 
+- Twitter-like live feed
+- Replaces 5 fake tweets every 10 seconds
+- Supports text-only, image-only, and multimodal tweets
+- Verify button triggers backend pipeline
+- Modal displays:
+  - Credibility label
+  - Confidence score
+  - XAI explanation
+  - Masked user ID
 
+---
 
+## ⚙️ Project Dependencies
 
+### Backend
+- Python 3.10+
+- FastAPI
+- CrewAI
+- Pydantic
+- PyMongo
+- Uvicorn
 
+### Frontend
+- React (Vite)
+- Tailwind CSS
+- JavaScript (ES6+)
 
+### Database
+- MongoDB Atlas / Local MongoDB
+
+---
+
+## 📁 Repository Structure
+
+acas-fake-news-system/
+├── backend/
+│   ├── agents/
+│   ├── pipeline/
+│   ├── routes/
+│   ├── db/
+│   └── main.py
+├── frontend/
+│   ├── src/
+│   ├── components/
+│   └── pages/
+└── README.md
+
+---
+
+## 🔄 Version Control & Collaboration
+
+- Git-based development
+- Feature-based commits
+- Modular agent architecture
+- Designed for collaborative model integration
+- Supports branching and merging workflows
+
+---
+
+## 🚀 Future Enhancements
+- Integration of real trained ML models
+- Docker-based deployment
+- Real-time social media ingestion
+- Advanced analytics dashboards
+
+---
+
+## 👤 Author
+**Lahiru Niroshan Sathsara**  
+Final Year IT Undergraduate – SLIIT  
+Component: Agent Orchestration & Privacy Infrastructure
 
 ---
 ### Dataset
