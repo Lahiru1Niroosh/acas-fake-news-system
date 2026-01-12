@@ -206,15 +206,15 @@ Component: Agent Orchestration & Privacy Infrastructure
 ---
 
 ### 🔹 System Responsibilities & Execution Flow (Combined)
-- Dataset Loading  -Loads news or social media text from CSV, JSON, or JSONL datasets
-- ext Preprocessing & Normalization  - Cleans raw text by removing URLs, symbols, and noise, and normalizes text to improve model understanding
+- Dataset Loading                    -Loads news or social media text from CSV, JSON, or JSONL datasets
+- Preprocessing & Normalization      - Cleans raw text by removing URLs, symbols, and noise, and normalizes text to improve model understanding
 - Semantic Text Embedding Generation -Converts cleaned text into semantic embeddings using Sentence-BERT (SBERT), preserving contextual meaning and intent of the content
-- Train–Test Data Split -Splits data into training and testing sets
-- Machine Learning Model Training -Trains classification models, Learns linguistic and semantic patterns of credible vs fake news
-- Model Evaluation -Evaluates performance using Accuracy, Precision, Recall, and F1-Score
-- External News Verification -Verifies claims using trusted external sources , Integrates News APIs and health sources (e.g., WHO) for cross-checking
-- Trust Score Calculation  -Generates a normalized trust score between 0 and 1
-- Credibility Prediction for New Text Supports prediction for unseen or real-time news text, outputs credibility label, confidence score, and trust level
+- Train–Test Data Split              -Splits data into training and testing sets
+- Machine Learning Model Training    -Trains classification models, Learns linguistic and semantic patterns of credible vs fake news
+- Model Evaluation                   -Evaluates performance using Accuracy, Precision, Recall, and F1-Score
+- External News Verification         -Verifies claims using trusted external sources , Integrates News APIs and health sources (e.g., WHO) for cross-checking
+- Trust Score Calculation            -Generates a normalized trust score between 0 and 1
+- Credibility Prediction for News    -Text Support prediction for unseen or real-time news text, outputs credibility label, confidence score, and trust level
 - Result Visualization & Output
 
 ---
@@ -227,7 +227,7 @@ Component: Agent Orchestration & Privacy Infrastructure
 - Python 3.11
 - Google Colab or Local Python Environment
 - Internet connection (for APIs)
-- 
+  
 ---
 
 ### 🧪 Technologies, Techniques & Algorithms
