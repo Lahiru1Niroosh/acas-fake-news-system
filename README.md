@@ -184,109 +184,103 @@ acas-fake-news-system/
 Final Year IT Undergraduate – SLIIT  
 Component: Agent Orchestration & Privacy Infrastructure
 
----
-### Dataset
-> **Dataset Source:**  
-> This project uses and modifies the [*Name*](link) by **author** (Kaggle).  
-> Data was cleaned, header-fixed, and news articles for balanced training and clear visualization.  
-> Used purely for **educational and research** purposes.
----
-## Training the Model
-Run the following command from the project root:
----
-## Evaluation & Charts
-After training, the model achieves **perfect classification accuracy** on this dataset.
-
----
-### Integrated APIs
-Here's an overview of all APIs that are integrated
-
-
-
-
-
----
-
-
 <br><br><br><br>
 
-# COMPONENT 1  - Text Credibility Assessment
-IT22576248 -K.K.K.G. Kalehewatta
 
+
+
+
+
+
+
+## 🧩 Individual Component Contribution
+**Author:** IT22576248 -K.K.K.G. Kalehewatta  
 ### Component Overview
 
-This Component is an AI-based Text Credibility Assessment System (Text Credibility & Fact-Checking System) designed to detect fake or misleading news content.
-The system combines Natural Language Processing (NLP), Machine Learning, Semantic Similarity, and News API–based verification to evaluate the trustworthiness of textual information.
+### 🔹 Component Title
+**-Text Credibility Assessment**
+---
 
-👉This model reads news text
-👉 Analyzes language, meaning, and writing style
-👉 Checks credibility using ML + Deep Learning
-👉 Verifies claims using external sources (WHO, News APIs)
-👉 Produces a final credibility verdict with confidence
+### 🔹 Description
+- This Component is an AI-based Text Credibility Assessment System (Text Credibility & Fact-Checking System) designed to detect fake or misleading news content.The system combines Natural Language Processing (NLP), Machine Learning, Semantic Similarity, and News API–based verification to evaluate the trustworthiness of textual information.
+---
 
-### Research Gap
+### 🔹 System Responsibilities & Execution Flow (Combined)
+- Dataset Loading  -Loads news or social media text from CSV, JSON, or JSONL datasets
+- ext Preprocessing & Normalization  - Cleans raw text by removing URLs, symbols, and noise, and normalizes text to improve model understanding
+- Semantic Text Embedding Generation -Converts cleaned text into semantic embeddings using Sentence-BERT (SBERT), preserving contextual meaning and intent of the content
+- Train–Test Data Split -Splits data into training and testing sets
+- Machine Learning Model Training -Trains classification models, Learns linguistic and semantic patterns of credible vs fake news
+- Model Evaluation -Evaluates performance using Accuracy, Precision, Recall, and F1-Score
+- External News Verification -Verifies claims using trusted external sources , Integrates News APIs and health sources (e.g., WHO) for cross-checking
+- Trust Score Calculation  -Generates a normalized trust score between 0 and 1
+- Credibility Prediction for New Text Supports prediction for unseen or real-time news text, outputs credibility label, confidence score, and trust level
+- Result Visualization & Output
 
-### 🧠 System Features
-Text preprocessing and normalization
-Sentence embeddings using SBERT
-Machine learning classification 
-Trust score calculation using cosine similarity
-External verification using News APIs
-Visualization of label and trust score distributions
-Prediction support for new/unseen text
-
-### 🏗️ System Architecture (High Level)
-Data Collection
-Text Preprocessing
-Embedding Generation
-ML Model Training
-News API Verification
-Trust Score Calculation
-Result Visualization & Output
+---
 
 ### ⚙️ System & Software Requirements
-Hardware Requirements
-CPU (Intel i5 or higher recommended)
-Minimum 8GB RAM
-GPU (Optional, for faster embedding generation)
-Python 3.11
-Google Colab or Local Python Environment
-Internet connection (for APIs)
+- Hardware Requirements
+- CPU (Intel i5 or higher recommended)
+- Minimum 8GB RAM
+- GPU (Optional, for faster embedding generation)
+- Python 3.11
+- Google Colab or Local Python Environment
+- Internet connection (for APIs)
+- 
+---
 
 ### 🧪 Technologies, Techniques & Algorithms
-Programming Language
-Python
-Libraries & Frameworks
-Pandas, NumPy
-Scikit-learn
-SentenceTransformers (SBERT)
-Hugging Face Transformers
-Matplotlib, Seaborn
+- Programming Language
+- Python
+- Libraries & Frameworks
+- Pandas, NumPy
+- Scikit-learn
+- SentenceTransformers (SBERT)
+- Hugging Face Transformers
+- Matplotlib, Seaborn
+
+  ---
 
 ### 🌐 External APIs Used (Verification)
-News Verification APIs
-NewsAPI.org
-GNews API
-WorldNewsAPI
+- News Verification APIs
+- NewsAPI.org
+- GNews API
+- WorldNewsAPI
+
+---
 
 ### 🔍 Methodology
-Load and preprocess the dataset
-Clean and normalize text
-Generate sentence embeddings
-Train ML classification model
-Verify claims using News APIs
-Compute trust score
-Visualize results and save outputs
+- Load and preprocess the dataset
+- Clean and normalize text
+- Generate sentence embeddings
+- Train ML classification model
+- Verify claims using News APIs
+- Compute trust score
+- Visualize results and save outputs
+  
+---
 
 ### 📊 Evaluation Metrics
-Accuracy
-Precision
-Recall
-F1-Score
+- Accuracy
+- Precision
+- Recall
+- F1-Score
 
-
-<br><br><br><br>
 ---
+
+## 👤 Author
+**K.K.K.G.Kalehewatta**  
+Final Year IT Undergraduate – SLIIT  
+Component: Text Credibility Assessment
+
+
+
+---
+
+
+
+
 # 🖼️ COMPONENT 2  - Image Authenticity Detection 
 
 IT22594990 – Ranasinghe K.D
@@ -302,24 +296,24 @@ Output: AI-generated or Human-made label with a confidence score
 
 ### 2. System Features
 
-Detection of AI-generated vs Human-made images
-Automated image preprocessing (resizing, normalization)
-Feature extraction using deep learning models
-Supervised learning with labeled datasets
-Confidence score generation (range: 0–1)
-Integration with CrewAI multi-agent architecture
-Storage of predictions and metadata in PostgreSQL
-Scalable and real-time–ready system design
+- Detection of AI-generated vs Human-made images
+- Automated image preprocessing (resizing, normalization)
+- Feature extraction using deep learning models
+- Supervised learning with labeled datasets
+- Confidence score generation (range: 0–1)
+- Integration with CrewAI multi-agent architecture
+- Storage of predictions and metadata in PostgreSQL
+- Scalable and real-time–ready system design
 
 ### 3. System Architecture (High-Level)
 
-Image Ingestion (Dataset / Twitter Images)
-Image Preprocessing
-Feature Extraction using CNN
-Image Classification (AI-generated vs Human-made)
-Confidence Score Generation
-Result Storage (PostgreSQL)
-Output forwarded to the AggregatorAgent
+- Image Ingestion (Dataset / Twitter Images)
+- Image Preprocessing
+- Feature Extraction using CNN
+- Image Classification (AI-generated vs Human-made)
+- Confidence Score Generation
+- Result Storage (PostgreSQL)
+- Output forwarded to the AggregatorAgent
 
 ### 4. System & Software Requirements
 
@@ -343,7 +337,7 @@ Programming Language
 
 ### 6. External APIs Used
 
-Kaggle API – for dataset downloading
+- Kaggle API – for dataset downloading
 (Twitter API planned for future fine-tuning and evaluation)
 
 ### 7. Methodology
@@ -513,7 +507,13 @@ The threshold is adjustable and tuned based on experimental results to balance s
 <br><br><br><br>
 ---
 
-<br><br><br><br>
+
+
+
+
+
+
+
 ---
 ## Technologies Used
 
@@ -532,8 +532,8 @@ The threshold is adjustable and tuned based on experimental results to balance s
 <br><br>
 ## Future Improvements
 
--Extend the system to analyze videos along side images, and text together.<br>
--Extend the system across all social media platform posts not just twitter.<br>
+-Extend the system to analyze videos alongside images and text together.<br>
+-Extend the system across all social media platform posts, not just Twitter.<br>
 -Multilingual Support -Sinhala 🇱🇰, Tamil 🇱🇰, English  🌍Use multilingual transformers (mBERT, XLM-R).<br>
 -Browser extensions-Enable users to check credibility instantly.<br>
 -Ethical & Bias Mitigation Enhancements- fairness across regions and languages.<br>
