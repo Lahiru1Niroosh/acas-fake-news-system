@@ -19,8 +19,8 @@ elif load_dotenv:
 MONGO_URI = os.getenv("MONGO_URI")
 MONGO_DB_NAME = os.getenv("MONGO_DB_NAME", "acas_db")
 
-if not MONGO_URI:
-    raise RuntimeError("MONGO_URI environment variable is not set. Ensure backend/config/.env exists or set the variable in your environment.")
+# if not MONGO_URI:
+#     raise RuntimeError("MONGO_URI environment variable is not set. Ensure backend/config/.env exists or set the variable in your environment.")
 
 client = MongoClient(MONGO_URI)
 db = client[MONGO_DB_NAME]
