@@ -6,7 +6,7 @@ app = FastAPI()
 # Create controller on startup to avoid instantiating LLMs at import time
 @app.on_event("startup")
 async def startup_event():
-    from backend.pipeline.controller import PipelineController
+    from .pipeline.controller import PipelineController
     try:
         app.state.controller = PipelineController()
     except Exception as e:
