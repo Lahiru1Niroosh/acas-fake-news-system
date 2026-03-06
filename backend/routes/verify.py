@@ -1,6 +1,6 @@
 # backend/routes/verify.py
 from fastapi import APIRouter
-from backend.pipeline.controller import PipelineController
+from ..pipeline.controller import PipelineController
 
 router = APIRouter()
 pipeline_controller = PipelineController()
